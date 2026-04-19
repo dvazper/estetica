@@ -1,0 +1,30 @@
+{
+    "name": "estetica/estetica-premium",
+    "description": "Sistema profesional de gestión de citas para estéticas",
+    "type": "project",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Desarrollador",
+            "email": "dev@example.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpmailer/phpmailer": "^6.5",
+        "stripe/stripe-php": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Estetica\\": "src/"
+        }
+    },
+    "scripts": {
+        "init-db": "php config/init_db.php",
+        "serve": "php -S localhost:8000",
+        "test": "echo 'Run your tests here'"
+    }
+}

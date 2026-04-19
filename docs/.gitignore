@@ -1,0 +1,65 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+
+# PHP y dependencias
+vendor/
+composer.lock
+.env
+.env.local
+.env.*.local
+
+# Base de datos
+database.sql
+*.sql
+
+# Logs
+logs/
+*.log
+error_log
+access_log
+
+# Caché
+cache/
+*cache*
+*.tmp
+
+# Archivos de configuración sensibles
+config/database.php
+config/stripe.php
+config/.env
+
+# Node modules (si se usa)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+build/
+dist/
+*.min.js
+*.min.css
+
+# Backups
+*.bak
+*.backup
+~*
+
+# Archivos temporales
+temp/
+tmp/
+*.temp
+
+# Sistema de archivos específicos
+.htaccess.local

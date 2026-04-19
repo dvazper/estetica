@@ -1,0 +1,69 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║                       🌸 LOTO SPA 🌸                              ║
+║                                                                    ║
+║            Sistema Profesional de Reservas de Citas              ║
+║                                                                    ║
+║                   ✨ TOTALMENTE PERSONALIZADO ✨                 ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+📁 ESTÁ TODO AQUÍ. TUS PRÓXIMAS ACCIONES:
+
+1️⃣  LEE ESTO PRIMERO (3 minutos)
+    ➜ Abre: PERSONALIZACION.txt
+
+2️⃣  PERSONALIZA (5 minutos)
+    ➜ Abre: config/loto-config.php
+    ➜ Cambia: Teléfono, email, ubicación
+    ➜ Guarda: Ctrl+S
+
+3️⃣  PRUEBA EN NAVEGADOR
+    ➜ http://localhost/estetica/
+    ➜ Prueba: Hacer una cita
+    ➜ Admin:  http://localhost/estetica/admin.php
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ LO QUE YA ESTÁ HECHO:
+
+  ✓ Logo profesional de Loto Spa
+  ✓ Colores verde y rosa elegantes
+  ✓ Todos los 11 servicios del catálogo
+  ✓ Precios en euros
+  ✓ Sin emojis - Aspecto profesional
+  ✓ Responsive (funciona en móvil)
+  ✓ Base de datos configurada
+  ✓ Panel administrativo completo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTACIÓN:
+
+  PERSONALIZACION.txt     ← LEE ESTO PRIMERO
+  LOTO_SPA_CAMBIOS.md     - Resumen de cambios realizados
+  LOTO_SPA_COMPLETO.txt   - Checklist y detalles
+  START_HERE.md           - Inicio rápido
+  DEPLOYMENT.md           - Cómo subir a internet
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 TU FLUJO:
+
+  AHORA: config/loto-config.php → Personalizar
+             ↓
+  HOY:   http://localhost/estetica/ → Probar
+             ↓
+  ESTA SEMANA: Ajustes y pruebas
+             ↓
+  PRONTO: DEPLOYMENT.md → Subir a internet
+             ↓
+  ¡LISTOS! Recibir citas de clientes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+¿SIN TIEMPO? Abre PERSONALIZACION.txt ahora.
+
+¿PREGUNTAS? Revisa: LOTO_SPA_COMPLETO.txt (sección FAQ)
+
+═══════════════════════════════════════════════════════════════════════

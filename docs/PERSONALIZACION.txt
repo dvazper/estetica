@@ -1,0 +1,183 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                  🌸 LOTO SPA PERSONALIZACIÓN 🌸                   ║
+║                   Todo está listo. Aquí qué hacer:                  ║
+╚════════════════════════════════════════════════════════════════════╝
+
+✅ CAMBIOS REALIZADOS AUTOMÁTICAMENTE:
+
+    ✓ Logo profesional de Loto Spa
+    ✓ Colores verde y rosa profesionales
+    ✓ Servicios actualizados con precios en euros
+    ✓ Sin emojis - diseño corporativo
+    ✓ Panel admin renovado
+    ✓ Estilos más elegantes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 PERSONALIZA TUS DATOS
+
+Abre el archivo: config/loto-config.php
+
+Cambia estas 3 líneas:
+
+Line 7:  define('TELEFONO', '+34 XXX XXX XXX');
+         ↓↓↓
+         define('TELEFONO', '+34 912 345 678');  ← Tu teléfono
+
+
+Line 8:  define('EMAIL', 'info@lotospa.com');
+         ↓↓↓
+         define('EMAIL', 'contacto@tudominio.com');  ← Tu email
+
+
+Line 9:  define('UBICACION', 'Tu ciudad, País');
+         ↓↓↓
+         define('UBICACION', 'Valencia, España');  ← Tu ubicación
+
+
+IMPORTANTE: Guarda el archivo (Ctrl+S)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 CAMBIAR COLORES
+
+Abre: css/style.css
+Línea: 3-4
+
+Actual:
+  --primary-color: #5a7d6e;       <- Verde
+  --secondary-color: #e8a5b8;     <- Rosa
+
+Busca tus colores en: https://www.color-hex.com/
+
+Ejemplo si quieres otro verde:
+  --primary-color: #4a7c59;       <- Verde más oscuro
+
+Guarda (Ctrl+S) y recarga navegador (Ctrl+R)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📅 CAMBIAR HORARIOS
+
+Abre: api/horarios.php
+Línea: 11-14
+
+Actual:
+  Mañana: 9:00 a 13:00
+  Tarde:  16:00 a 20:00
+
+Para cambiar a 8:00-14:00 y 17:00-21:00:
+
+Línea 11: for ($h = 9; $h < 13; $h++)
+          Cambiar a: for ($h = 8; $h < 14; $h++)
+
+Línea 12: for ($h = 16; $h < 20; $h++)
+          Cambiar a: for ($h = 17; $h < 21; $h++)
+
+Guarda (Ctrl+S)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛍️ AGREGAR SERVICIOS
+
+Opción 1: Editar archivo config/loto-config.php
+
+En el array $servicios, agregar:
+
+    array(
+        'nombre' => 'Tu nuevo servicio',
+        'descripcion' => 'Breve descripción',
+        'precio' => 50,        <- Precio en euros
+        'duracion' => 60       <- Minutos
+    ),
+
+Opción 2: Via base de datos
+
+1. Abrir: http://localhost/phpmyadmin
+2. BD: estetica_db → Tabla: servicios
+3. Insert new row y agregar
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🖼️ CAMBIAR LOGO
+
+Tu logo está en: images/logo.svg
+
+Para ponerlo tuyo:
+
+1. Obtén una imagen tuya (PNG, JPG)
+2. Cópiala a: images/ (con nombre "logo.png")
+3. En index.php línea ~25, cambia:
+   <img src="images/logo.svg" ...>
+   a:
+   <img src="images/logo.png" ...>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔗 ACCESO A TU SITIO
+
+Sitio web:       http://localhost/estetica/
+Admin panel:     http://localhost/estetica/admin.php
+phpMyAdmin:      http://localhost/phpmyadmin
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ VERIFICAR CAMBIOS
+
+Después de editar cualquier archivo:
+
+1. Guarda (Ctrl+S)
+2. En navegador, recarga (Ctrl+R)
+3. Desactiva caché si no ves cambios:
+   Ctrl+Shift+R (recarga sin caché)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CUANDO ESTÉ LISTO
+
+Lee: DEPLOYMENT.md
+
+Te guiará paso a paso para subir tu Loto Spa a internet.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ PREGUNTAS
+
+P: ¿Dónde están los servicios?
+R: En index.php línea ~123 (en el formulario)
+   Y en config/loto-config.php (definición)
+
+P: ¿Puedo cambiar la moneda de € a $?
+R: En index.php y en los servicios.
+   Busca "€" y reemplaza por "$"
+
+P: ¿Cómo cambio el texto del sitio?
+R: index.php es el archivo principal.
+   Busca el texto y cambialo
+
+P: ¿Se ve diferente en móvil?
+R: Abre en móvil: http://localhost/estetica/
+   (El navegador del móvil necesita acceso a tu red local)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 ARCHIVOS IMPORTANTES
+
+Editar para personalizar:
+  • index.php              - Página principal
+  • css/style.css          - Colores y estilos
+  • api/horarios.php       - Horarios
+  • config/loto-config.php - Datos del negocio
+
+Ver pero no editar:
+  • admin.php              - Panel administrativo
+  • api/*.php              - Lógica del servidor
+  • js/*.js                - Lógica del cliente
+  • database/ *            - Base de datos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    ¡Loto Spa está listo! 🌸
+                  Personalízalo y comienzá a recibir citas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
